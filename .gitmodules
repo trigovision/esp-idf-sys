@@ -1,4 +1,4 @@
 [submodule "esp-idf"]
 	path = esp-idf
 	url = git@github.com:espressif/esp-idf.git
-	tag = v3.2.2
+	tag = v4.4-dev

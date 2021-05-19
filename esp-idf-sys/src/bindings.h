@@ -1,5 +1,8 @@
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
+#include "freertos/timers.h"
+#include "freertos/queue.h"
+#include "freertos/semphr.h"
 #include "driver/adc.h"
 #include "driver/can.h"
 #include "driver/dac.h"
@@ -14,4 +17,13 @@
 #include "driver/spi_slave.h"
 #include "driver/timer.h"
 #include "driver/uart.h"
-#include <esp_clk.h>
+#include <esp32/clk.h>
+
+#include <esp_cpu.h>
+#include <esp_task_wdt.h>
+#include <esp_sleep.h>
+#include <esp_wifi.h>
+#include <esp_websocket_client.h>
+#include <esp_event_loop.h>
+#include <mqtt_client.h>
+#include <nvs_flash.h>

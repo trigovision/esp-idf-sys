@@ -1,13 +1,15 @@
 [package]
 name = "esp-idf-sys"
-version = "0.1.2"
-authors = ["Alexey Arbuzov <aarbuzov@termt.com>", "sapir <yasapir@gmail.com>"]
+version = "0.1.5"
+authors = ["Alexey Arbuzov <aarbuzov@termt.com>", "sapir <yasapir@gmail.com>", "ohadravid <ohad.rv@gmail.com>"]
 edition = "2015"
 description = "Bindings for esp-idf (Espressif's IoT Development Framework)"
 repository = "https://github.com/sapir/esp-idf-sys"
 license = "MIT"
 
 [dependencies]
+anyhow = { version = "1", default-features = false }
+cstr_core = "0.2"
 
 # no xtensa in regular compiler yet
 [package.metadata.docs.rs]

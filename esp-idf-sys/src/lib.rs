@@ -2,6 +2,11 @@
 #![allow(non_upper_case_globals)]
 #![allow(non_camel_case_types)]
 #![allow(non_snake_case)]
+#![feature(try_trait)]
+
+extern crate cstr_core;
+
+pub mod error;
 
 pub mod std {
     pub use core::*;
